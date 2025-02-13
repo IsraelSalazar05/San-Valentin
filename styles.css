@@ -35,17 +35,18 @@ body {
 
 /* Estilo del contenedor del video */
 .video-container {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* Estilos para el iframe del video */
 .video-container iframe {
-  width: 315px; /* Ancho fijo para el video */
-  height: 560px; /* Altura fija para el video */
-  border: none;
+  width: 90vw; /* 90% del ancho de la pantalla */
+  max-width: 315px; /* Tamaño máximo para que no se agrande demasiado en pantallas grandes */
+  height: 560px; /* Altura fija para mantener proporción vertical */
 }
 
 /* Estilos para los corazones */
